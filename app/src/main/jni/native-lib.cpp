@@ -41,7 +41,7 @@ void dump_thread() {
     sleep(Sleep);
 
     auto il2cpp_handle = dlopen(libTarget, 4);
-    char buffer[64];
+    char buffer[0xFF];
     LOGI("Start dumping");
 
     sprintf(buffer, "/storage/emulated/0/Android/data/%s", GetPackageName());
